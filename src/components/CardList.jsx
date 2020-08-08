@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import CardItem from "./CardItem";
 
 export default function CardList(props) {
@@ -41,7 +41,6 @@ export default function CardList(props) {
     Axios.get(reqApi).then((d) => setData(d.data.articles));
   }, [selectedNav]);
 
-  console.log(props);
   return (
     <Row id="allCardsContainer">
       {data.map((item, ind) => {

@@ -11,10 +11,6 @@ const Navbar = (props) => {
         className="justify-content-center"
         activeKey="/home"
       >
-        {/* <Nav.Item>
-          <Nav.Link eventKey="active">Home</Nav.Link>
-        </Nav.Item> */}
-
         {listValues.map((item) => {
           return (
             <Nav.Item>
