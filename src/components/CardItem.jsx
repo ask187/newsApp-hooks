@@ -49,6 +49,7 @@ export default function CardItem(props) {
               height: "150px",
               fontSize: "larger",
               overflow: "hidden",
+              justifyContent: "center",
             }}
           >
             {props.item.description}
